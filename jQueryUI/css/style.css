@@ -1,0 +1,176 @@
+ body{
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-size: 16px;
+	background: rgba(3, 169, 244, 0.42);
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	text-transform: uppercase;
+	font-weight: 200;
+	margin: 0;
+	color: steelblue;
+}
+h2{
+	font-size: 16px;
+	margin: 0;
+    font-weight: 550;
+    color: rgba(23, 27, 206, 0.46);
+}
+h3{
+	font-weight: 200;
+	width: 100%;
+	font-size: 16px;
+}
+form fieldset{
+	margin: 20px 0;
+}
+form fieldset input{
+	border-radius: 5px;
+	border: 1px solid gray;
+	height: 21px;
+	box-shadow: 0 3px 3px #575555 inset;
+	color: steelblue;
+	font-size: 14px;
+}
+form .block-select select {
+	width: 100%;
+}
+.conteiner{
+	width: 650px;
+    margin: 20px auto;
+    padding: 30px 20px 20px;
+	background: #EDE4FB;
+	box-shadow: 11px 12px 18px rgba(0,0,0,0.4);
+}
+.title{
+	text-align: center;
+}
+.block-select select, .name input, fieldset{
+
+	background: rgba(3, 169, 244, 0.25); 
+	color: steelblue;
+	border: 2px solid rgba(23, 27, 206, 0.46);
+	box-shadow: 7px -2px 7px rgba(32, 52, 120, 0.66);
+	border-radius: 5px;
+	font: 18px Arial;
+}
+.block_1 input{
+	height: 20px;
+    margin: 10px 8px;
+}
+.block_1 .info-left input {
+    width: 100px;
+}
+.block_2 label{
+	margin-left: 30px;
+}
+.block_2 span{margin: 17px 0;}
+.info_born_right select{
+	font-size: 16px;
+	width: 100%;
+	color: steelblue;
+	margin: 20px 0;
+    border: 1px solid gray;
+    box-shadow: 0 3px 3px #575555 inset;
+}
+.info_born_right{
+    height: 25px;
+    font-size: 18px;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.block-select{
+	height: 30px;
+	width: 650px;
+	margin: 15px 0 0;
+}
+
+.block-fio {
+	margin: 10px 0 10px;
+}
+.block-fio label, h3{
+	display: inline-block;
+	width: 100%;
+	line-height: 20px;
+    margin: 4px 0;
+    vertical-align: middle;
+    font-style: italic;
+
+}
+.block-fio input{
+	width: 340px;
+    height: 22px;
+    margin: 0;
+	padding: 2px 8px;
+	font-size: 14px;
+}
+.info, .info_born{
+	width: 100%;
+}
+.info-left, .info-right, .info_born_left, .info_born_right {
+    float: left;
+    width: 50%;
+}
+.info-left p{margin: 0;}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+input[name="pasport-code"]{
+	width: 37px;
+}
+
+input[name="city-born"]{
+	width: 240px;
+}
+.personal_info{
+	margin: 10px 0;
+}
+.pochta{
+	margin: 10px 0;
+}
+input[id="email"]{
+	width: 350px;
+}
+#organization input{width: 428px;}
+button{
+    padding: 0;
+    border: none;
+    cursor: pointer;
+   	width: 500px;
+	height: 40px;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #fff;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	background: linear-gradient(to left, rgba(14, 186, 214, 0.95) 0%, rgba(14, 186, 214, 0.95), #6D20BB);
+	background: -webkit-linear-gradient(to left, rgba(14, 186, 214, 0.95) 0%, rgba(14, 186, 214, 0.95), #6D20BB);
+	background: -moz-linear-gradient(to left, rgba(14, 186, 214, 0.95) 0%, rgba(14, 186, 214, 0.95), #6D20BB);
+	background: -ms-linear-gradient(to left, rgba(14, 186, 214, 0.95) 0%, rgba(14, 186, 214, 0.95), #6D20BB);
+	background: -o-linear-gradient(to left, rgba(14, 186, 214, 0.95) 0%, rgba(14, 186, 214, 0.95), #6D20BB);
+	
+}
+button:hover{
+	background: linear-gradient(to left, #6D20BB 0%, rgba(14, 186, 214, 0.95), rgba(14, 186, 214, 0.95));
+	background: -webkit-linear-gradient(to left, #6D20BB 0%, rgba(14, 186, 214, 0.95), rgba(14, 186, 214, 0.95));
+	background: -moz-linear-gradient(to left, #6D20BB 0%, rgba(14, 186, 214, 0.95), rgba(14, 186, 214, 0.95));
+	background: -ms-linear-gradient(to left, #6D20BB 0%, rgba(14, 186, 214, 0.95), rgba(14, 186, 214, 0.95));
+	background: -o-linear-gradient(to left, #6D20BB 0%, rgba(14, 186, 214, 0.95), rgba(14, 186, 214, 0.95));
+}
+button:active{
+	line-height: 45px;
+	-webkit-box-shadow: inset 0px 2px 5px 0px #000;
+	-moz-box-shadow: inset 0px 2px 5px 0px #000;
+	box-shadow: inset 0px 2px 5px 0px #000;
+}
+button:focus{
+	outline: none;/*remove Chrome outline*/
+}
+

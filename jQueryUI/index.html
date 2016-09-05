@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Home_work_14</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	</head>
+	<body> 
+		<div class="conteiner">
+			<div class="title"> 
+				<h1>Анкета</h1>
+				<h2>Кандидата на посаду працівника патрульної служби</h2>
+			</div>
+			<form class="anketa" action="#" method="post">
+				<div class="block-select">
+					<select>
+						<option disabled selected hidden>Оберіть місто, в якому Ви бажаєте працювати</option>
+						<option>Дніпропетровськ</option>
+						<option>Київ</option>
+						<option>Одеса</option>
+						<option>Івано-Франківськ</option>
+						<option>Суми</option>
+						<option>Запоріжжя</option>
+					</select>
+				</div>
+				<fieldset class="block_1">
+					<div class="info clear">	
+						<div class="info-left">	
+							<!-- <label for="age">Дата народження</label>
+							<input id="age" type="text" maxlength="10" placeholder="21-10-1982"> -->
+							<p>Дата народження <input type="text" id="datepicker"></p>
+
+						</div>	
+						<div class="info-right">	
+							<label for="citizenship">Громадянство</label>
+							<input id="citizenship" type="text" name="citizenship" maxlength="30">
+						</div>	
+					</div>
+					<div class="info_born clear">
+						<div class="info_born_left">
+							<label for="city-born">Місце народження</label>
+							<input id="city-born" type="text" name="city-born" maxlength="30" placeholder="Населений пункт">
+						</div>
+						<div class="info_born_right">
+							<select>
+								<option disabled selected hidden>Країна</option>
+								<option>Україна</option>
+								<option>Росія</option>
+								<option>Білорусь</option>
+								<option>Літва</option>
+								<option>Словенія</option>
+								<option>Республіка Молдова</option>
+							</select>
+						</div>
+					</div>	
+				</fieldset>	
+					
+				<fieldset class="block_2">	
+					<span class="info-left">
+						<label for="pasport">Паспорт</label>
+						<input id="pasport" type="text" maxlength="2" name="pasport-code" placeholder="Серія">
+						<input id="pasport_seriay" type="text" maxlength="6" name="pasport-number" placeholder="Номер">
+					</span>	
+
+					<p class="info-right">Дата видачі <input type="text" id="datepicker"></p>
+					<!-- <label for="date-output">Дата видачі</label>
+					<input id="date-output" type="text" maxlength="10" placeholder="21-10-1982"> -->
+					<div class="clear"></div>
+					<div class="personal_info">
+						<label for="organization">Ким видано</label>
+						<input id="organization" type="text" maxlength="70">
+					</div>
+					<div class="personal_info">
+						<label for="inn">Ідентифікаційний номер</label>
+						<input id="inn" type="text" maxlength="12">
+					</div>
+				</fieldset>	
+
+				<fieldset class="block_3">
+					<div>
+						<div><label for="crime">До кримінальної відповідальності:</label></div>
+						<div><input id="crime" type="radio" name="radio" checked>притягувався</div>
+						<div><input id="crime_no" type="radio" name="radio">не притягувався</div>
+					</div>	
+					<div class="pochta">
+						<label for="email">Адреса електронної пошти</label>
+						<input id="email" type="text" maxlength="30">	
+					</div>	
+					
+					<div>
+						<input id="zgoda" type="checkbox">
+						<label for="zgoda">
+							Подаючи цю анкету, я підтверджую, що розумію вимоги Закону України “Про запобігання корупції” та можливість застосування до мене заходів відповідно до Закону України “Про очищення влади”, надаю згоду на обробку моїх особистих персональних даних у будь-який спосіб з метою організації прийому мене на посаду працівника патрульної служби і включення інформації про мене до бази персональних даних та ознайомлений з правами, що передбачені Законом України «Про захист персональних даних», і погоджуюсь, що невдале проходження конкурсного відбору до патрульної поліції може бути підставою для відмови в участі в інших конкурсних відборах, а також усвідомлюю, що організатори зберігають право відмовити у наданні відомостей щодо причин не проходження етапів відбору кандидатами.
+						</label>
+					</div>	
+				</fieldset>
+				<button>Отправить</button>
+			</form>
+		</div>
+
+		<script>
+			$(function() {
+			    $( "#datepicker" ).datepicker({
+			      showOtherMonths: true,
+			      selectOtherMonths: true
+			    });
+			});
+		</script>
+	</body>
+
+</html>
